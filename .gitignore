@@ -13,3 +13,7 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+/vendor/
+
+# project files, don't need to excluded
+/.idea/
