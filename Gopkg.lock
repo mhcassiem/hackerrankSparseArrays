@@ -2,78 +2,62 @@
 
 
 [[projects]]
-  digest = "1:31e761d97c76151dde79e9d28964a812c46efc5baee4085b86f68f0c654450de"
   name = "github.com/konsorten/go-windows-terminal-sequences"
   packages = ["."]
-  pruneopts = "UT"
   revision = "f55edac94c9bbba5d6182a4be46d86a2c9b5b50e"
   version = "v1.0.2"
 
 [[projects]]
-  digest = "1:4a29eeb25603debe8f2098a9902c4d3851034cf70d33be428826e86e8c30a1b0"
   name = "github.com/mattn/go-colorable"
   packages = ["."]
-  pruneopts = "UT"
   revision = "98ec13f34aabf44cc914c65a1cfb7b9bc815aef1"
   version = "v0.1.4"
 
 [[projects]]
-  digest = "1:0c58d31abe2a2ccb429c559b6292e7df89dcda675456fecc282fa90aa08273eb"
   name = "github.com/mattn/go-isatty"
   packages = ["."]
-  pruneopts = "UT"
   revision = "7b513a986450394f7bbf1476909911b3aa3a55ce"
   version = "v0.0.12"
 
 [[projects]]
   branch = "master"
-  digest = "1:2b32af4d2a529083275afc192d1067d8126b578c7a9613b26600e4df9c735155"
   name = "github.com/mgutz/ansi"
   packages = ["."]
-  pruneopts = "UT"
   revision = "9520e82c474b0a04dd04f8a40959027271bab992"
 
 [[projects]]
-  digest = "1:04457f9f6f3ffc5fea48e71d62f2ca256637dee0a04d710288e27e05c8b41976"
+  branch = "master"
+  name = "github.com/mhcassiem/logrus_init"
+  packages = ["logger_init"]
+  revision = "c0f2a9cc3d31cca81b7399fb347b78a0c132fceb"
+
+[[projects]]
   name = "github.com/sirupsen/logrus"
   packages = ["."]
-  pruneopts = "UT"
   revision = "839c75faf7f98a33d445d181f3018b5c3409a45e"
   version = "v1.4.2"
 
 [[projects]]
-  digest = "1:39a425f98fb19427061a693fe6bf0683c9bddec4b25b17067e34fdb465e39cb9"
   name = "github.com/x-cray/logrus-prefixed-formatter"
   packages = ["."]
-  pruneopts = "UT"
   revision = "bb2702d423886830dee131692131d35648c382e2"
   version = "v0.5.2"
 
 [[projects]]
   branch = "master"
-  digest = "1:c8b0363634b7f813bd07d829fa98af420d99c68d9e88077a7c86fad8e6e31e27"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
-  pruneopts = "UT"
   revision = "530e935923ad688be97c15eeb8e5ee42ebf2b54a"
 
 [[projects]]
   branch = "master"
-  digest = "1:90acf443a8ab1cc0fd72406089c69db5c9accbdf98279a5827ca2920face8918"
   name = "golang.org/x/sys"
-  packages = [
-    "unix",
-    "windows",
-  ]
-  pruneopts = "UT"
+  packages = ["unix","windows"]
   revision = "34d275377bf96a094e8d5b0c61750ddd54cd6b36"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = [
-    "github.com/sirupsen/logrus",
-    "github.com/x-cray/logrus-prefixed-formatter",
-  ]
+  inputs-digest = "43cf6b367591764ee0d34af39013087ee852ac8fd58087dcdb23614e95f6f8ad"
   solver-name = "gps-cdcl"
   solver-version = 1

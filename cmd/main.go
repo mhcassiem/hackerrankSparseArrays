@@ -1,20 +1,10 @@
 package main
 
 import (
-	"github.com/sirupsen/logrus"
-	prefixed "github.com/x-cray/logrus-prefixed-formatter"
-	"os"
+	"github.com/mhcassiem/logrus_init/logger_init"
 )
 
 func main() {
-	log := &logrus.Logger{
-		Out:   os.Stderr,
-		Level: logrus.DebugLevel,
-		Formatter: &prefixed.TextFormatter{
-			ForceColors:     true,
-			FullTimestamp:   false,
-			ForceFormatting: true,
-		},
-	}
+	log := logger_init.Init_logger()
 	log.Info("Hello finally")
 }
