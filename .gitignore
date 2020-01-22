@@ -15,5 +15,5 @@
 # vendor/
 /vendor/
 
-# project files, don't need to excluded
+# project files, don't need to included
 /.idea/
